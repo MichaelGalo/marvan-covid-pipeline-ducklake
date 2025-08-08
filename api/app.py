@@ -17,7 +17,7 @@ async def root():
     }
 
 @app.get("/data/datasets", tags=["Datasets"])
-async def get_all_datasets(country, keyword, last_updated):
+async def get_all_datasets(country: str = None, keyword: str = None, last_updated: str = None):
     logger.info(
         f"Datasets endpoint accessed with query parameters: country={country}, keyword={keyword}, last_updated={last_updated}"
     )

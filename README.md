@@ -98,6 +98,19 @@ The pipeline will:
 4. Ingest raw CSV files from MinIO into Bronze tables
 5. Process data through Silver and Gold layers
 
+## API Documentation
+
+The project includes a FastAPI-based REST API for accessing the processed COVID-19 datasets. The API provides endpoints for querying datasets, countries, and filtered data.
+
+### Starting the API Server
+
+```bash
+# Start the development server
+uvicorn api.app:app --reload
+```
+
+The API will be available at `http://localhost:8000` with interactive documentation at `http://localhost:8000/docs`.
+
 ## Querying Data
 
 ### Using DataGrip
