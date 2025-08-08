@@ -1,0 +1,8 @@
+# Add your project dependencies here
+duckdb
+pytest
+dotenv
+pandas
+minio
+polars
+requests
