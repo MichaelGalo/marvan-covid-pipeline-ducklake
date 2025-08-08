@@ -179,3 +179,5 @@ Logs are written to both console and `logs/application.log`.
 ---
 
 *This project represents a journey from traditional data warehousing to modern data lake architectures. It's designed for learning and experimentation rather than production use.*
+
+**Built by [Michael Galo](https://github.com/MichaelGalo)** with original inspiration and contributions from an airflow project by [Alex Berka](https://github.com/alexberka), [Prahlad Siwokoti](https://github.com/siwa-p) and [Daniel Wallace](https://github.com/daniel-wallace-personal). 
