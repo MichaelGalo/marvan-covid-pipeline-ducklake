@@ -61,7 +61,6 @@ FROM silver.us_deathcounts;
 -- api metadata
 CREATE TABLE IF NOT EXISTS gold.api_metadata AS
 SELECT
-    "id",
     dataset_id,
     country,
     dataset_name,
