@@ -21,9 +21,7 @@ duckdb.load_extension("ducklake")
 duckdb.load_extension("httpfs")
 logger.info("DuckDB extensions loaded successfully")
 
-# con = duckdb.connect(f"ducklake:{parent_path}/marvan_lake.db")
-# logger.info(f"Connected to DuckLake database: {parent_path}/marvan_lake.db")
-
+# Explicitly define database and data paths
 db_path = os.path.join(parent_path, "marvan_lake.db")
 con = duckdb.connect(db_path)
 logger.info(f"Connected to persistent DuckDB database: {db_path}")
@@ -35,9 +33,6 @@ logger.info(f"Attaching DuckLake with data path: {data_path}")
 con.execute(f"ATTACH 'ducklake:{catalog_path}' AS my_ducklake (DATA_PATH '{data_path}')")
 con.execute("USE my_ducklake")
 logger.info("DuckLake attached and activated successfully")
-
-
-
 
 # Configure MinIO settings
 logger.info("Configuring MinIO S3 settings")

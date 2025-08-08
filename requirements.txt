@@ -6,3 +6,6 @@ pandas
 minio
 polars
 requests
+fastapi[standard]
+pip-tools
+pytz
