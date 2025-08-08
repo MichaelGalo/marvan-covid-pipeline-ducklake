@@ -210,3 +210,6 @@ __marimo__/
 .streamlit/secrets.toml
 
 .DS_Store
+marvan_lake.db
+data/
+catalog.ducklake
